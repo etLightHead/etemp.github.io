@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="theme-color" content="#1b7aca">
   <link rel="icon" href="/icon.png">
-  <meta name="application-name" content="Hexo"/>
+  <meta name="application-name" content="etle's blog"/>
   <meta name="msapplication-TileColor" content="#1b7aca"/>
   <meta name="msapplication-square70x70logo" content="/icon.png" />
   <meta name="msapplication-square150x150logo" content="/icon.png" />
@@ -18,21 +18,23 @@
   <link rel="apple-touch-startup-image" href="/icon.png">
 
   
-  <title>Hexo</title>
+  <title>etle&#39;s blog</title>
   <meta name="author" content="etld">
+  
+  <meta name="description" content="just a blog">
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
   
-  <meta property="og:site_name" content="Hexo"/>
+  <meta property="og:site_name" content="etle&#39;s blog"/>
 
   
     <meta property="og:image" content=""/>
   
 
   <link href="/etld/favicon.png" rel="icon">
-  <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  <link rel="alternate" href="/atom.xml" title="etle&#39;s blog" type="application/atom+xml">
   <link rel="stylesheet" href="/etld/css/style.css" media="screen" type="text/css">
   
     <link href="/etld/css/animate.css" rel="stylesheet">
@@ -60,7 +62,7 @@ alert("Please Update Your IE \n请升级您的IE浏览器");
   <a href="/etld/">
     <img id="icon-photo-small" class="personal-photo  animated rotateIn" src="/icon.png" alt="etld">
   </a>
-  <h1 id="title-mini" class=""><a href="/etld/">Hexo</a></h1>
+  <h1 id="title-mini" class=""><a href="/etld/">etle&#39;s blog</a></h1>
 </div>
 <a target="_blank" id="mini-toggle" class="more icon alignright"></a>
 <nav id="main-nav" class="alignright animated slideInRight">
@@ -93,7 +95,7 @@ alert("Please Update Your IE \n请升级您的IE浏览器");
     
     <figcaption>
       <h3 class=>etld</h3>
-      <p></p>
+      <p>just a blog</p>
     </figcaption>
   </figure>
   <section class="social">
@@ -275,7 +277,7 @@ alert("Please Update Your IE \n请升级您的IE浏览器");
 
   <script>
   $(".archive").click(function (e) {
-      if ($("title").text().indexOf( "Hexo" )>=0 ){
+      if ($("title").text().indexOf( "etle's blog" )>=0 ){
           if (e.target.href){
               $(".animated:contains(\'"+e.target.text+"\')").addClass("bounceOut");
               setTimeout(function(){
@@ -291,7 +293,7 @@ alert("Please Update Your IE \n请升级您的IE浏览器");
   </script>
   <script>
   $(".backtohome").click(function (e) {
-      if ($("title").text() != "Hexo"){
+      if ($("title").text() != "etle's blog"){
           //go back to home
           setTimeout(function(){
               loadpage();
@@ -312,7 +314,7 @@ alert("Please Update Your IE \n请升级您的IE浏览器");
       if ( !pageTitle ){
           //home
           $('#myCanvasContainer').css("display","none");
-          $("title").text("Hexo");
+          $("title").text("etle's blog");
           $("[idplus]").css("display","none");
           $(".titlelist").css("display","");
       } else if ( pageTitle.indexOf("#tag")>=0 ) {
@@ -320,11 +322,11 @@ alert("Please Update Your IE \n请升级您的IE浏览器");
           $('#myCanvasContainer').css("display","");
           $("[idplus]").css("display","none");
           $(".titlelist").css("display","none");
-          $("title").text("Tag Cloud | Hexo");
+          $("title").text("Tag Cloud | etle's blog");
       } else {
           //pages
           $('#myCanvasContainer').css("display","none");
-          $("title").text(pageTitle + " | Hexo");
+          $("title").text(pageTitle + " | etle's blog");
           var pageIDplus=pageTitle.replace(/\s+/g,"")
           $(".titlelist").css("display","none");
           $("[idplus=\'" + pageIDplus +"\']" ).css("display","");

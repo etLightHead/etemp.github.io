@@ -5,15 +5,15 @@
   src: url("font/fontawesome-webfont.eot?#iefix") format('embedded-opentype'), url("font/fontawesome-webfont.woff") format('woff'), url("font/fontawesome-webfont.ttf") format('truetype'), url("font/fontawesome-webfont.svg#FontAwesomeRegular") format('svg');
 }
 .depth {
-  color: #6d6d6d;
+  color: #ddd;
 }
 * {
   margin: 0;
   padding: 0;
 }
 body {
-  background: #f1f1f1;
-  color: #6d6d6d;
+  background: #774;
+  color: #ddd;
   font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
   font-size: 14px;
   text-shadow: 0 0 1px transparent;
@@ -48,7 +48,7 @@ h3 {
 }
 a {
   text-decoration: none;
-  color: #1b7aca;
+  color: #1b1b1b;
 }
 a:hover {
   text-decoration: underline;
@@ -126,7 +126,7 @@ p {
   position: fixed;
   left: 0px;
   z-index: 9999;
-  background-color: #1b7aca;
+  background-color: #1b99aa;
   height: 66px;
 }
 @media screen and (min-width: 801px) {
@@ -150,7 +150,7 @@ p {
   display: inline;
   position: relative;
   left: 20px;
-  color: #6d6d6d;
+  color: #ddd;
   font-weight: normal;
   font-size: 2.5em;
   line-height: 1;
@@ -187,7 +187,7 @@ p {
 }
 #header #main-nav .icon {
   position: relative;
-  background-color: #1b7aca;
+  background-color: #1b99aa;
   font: 1.1em FontAwesome;
   margin: 0 auto;
   padding: 10px;
@@ -207,7 +207,7 @@ p {
   }
 }
 #header #main-nav .icon:hover {
-  color: #6d6d6d;
+  color: #ddd;
 }
 #header #main-nav .github:before {
   content: "\f09b";
@@ -388,10 +388,10 @@ article header .icon {
   position: absolute;
   top: 16px;
   left: 20px;
-  color: #6d6d6d;
+  color: #ddd;
 }
 article header .icon:hover {
-  color: #6d6d6d;
+  color: #ddd;
   text-decoration: none;
 }
 @media screen and (max-width: 600px) {
@@ -417,7 +417,7 @@ article header time {
 article header .title {
   font-weight: normal;
   display: inline;
-  color: #6d6d6d;
+  color: #ddd;
 }
 @media screen and (max-width: 450px) {
   article header .title {
@@ -425,10 +425,10 @@ article header .title {
   }
 }
 article header .title a {
-  color: #6d6d6d;
+  color: #ddd;
 }
 article header .title a:hover {
-  color: #1b7aca;
+  color: #1b1b1b;
   text-decoration: none;
 }
 article .entry {
@@ -472,7 +472,7 @@ article .entry pre {
   font-family: Monaco, Menlo, Consolas, Courier New, monospace;
 }
 article .entry code {
-  background: #f1f1f1;
+  background: #774;
   color: #666;
   padding: 0 5px;
   margin: 0 2px;
@@ -481,7 +481,7 @@ article .entry code {
   border-radius: 3px;
 }
 article .entry pre {
-  background: #f1f1f1;
+  background: #774;
   border: 1px solid #f1f1f1;
   margin-top: 15px;
   overflow: auto;
@@ -592,7 +592,7 @@ article footer a {
   color: #999;
 }
 article footer a:hover {
-  color: #1b7aca;
+  color: #1b1b1b;
   text-decoration: none;
 }
 article footer a:before {
@@ -635,7 +635,7 @@ article footer .addthis iframe {
 }
 #comment {
   padding: 20px;
-  background: #f1f1f1;
+  background: #774;
   -webkit-box-shadow: 1px 2px 3px #ececec;
   box-shadow: 1px 2px 3px #ececec;
   margin-bottom: 50px;
@@ -647,15 +647,15 @@ article footer .addthis iframe {
 #pagination a {
   display: block;
   padding: 5px 10px;
-  background: #1b7aca;
+  background: #1b99aa;
   color: #fff;
   font-family: "Lato", Helvetica Neue, Helvetica, Arial, sans-serif;
   text-shadow: 0 0 2px #6d6d6d;
   margin-bottom: 50px;
 }
 #pagination a:hover {
-  background: #6d6d6d;
-  color: #f1f1f1;
+  background: #ddd;
+  color: #774;
   text-decoration: none;
   text-shadow: none;
 }
@@ -712,8 +712,8 @@ article footer .addthis iframe {
   left: 0px;
   border-right: solid 1px #1b7aca;
   height: 100%;
-  background-color: #1b7aca;
-  background: #1b7aca;
+  background-color: #1b99aa;
+  background: #1b99aa;
   -webkit-box-shadow: 0px 0 0 0 #222;
   box-shadow: 0px 0 0 0 #222;
 }
@@ -753,11 +753,11 @@ article footer .addthis iframe {
   color: #fff;
 }
 #sidebar .personal-info figure {
-  border-bottom: solid 1px #1b7aca;
+  border-bottom: solid 1px #1b99aa;
 }
 #sidebar .social {
   text-indent: 0;
-  border-top: solid 1px #1b7aca;
+  border-top: solid 1px #1b99aa;
   text-align: center;
 }
 #sidebar .personal-photo {
@@ -780,7 +780,7 @@ article footer .addthis iframe {
   font-size: 30px;
 }
 #sidebar .icon:hover {
-  color: #6d6d6d;
+  color: #ddd;
 }
 #sidebar .github:before {
   content: "\f09b";
@@ -872,7 +872,7 @@ article footer .addthis iframe {
   color: #999;
 }
 .html5 .search input:focus {
-  color: #6d6d6d;
+  color: #ddd;
 }
 .html5 .tag small {
   margin-left: 15px;
@@ -913,7 +913,7 @@ article footer .addthis iframe {
   text-shadow: 0 0 1px #fff;
 }
 .entry .gist {
-  background: #f1f1f1;
+  background: #774;
   border: 1px solid #f1f1f1;
   margin-top: 15px;
   padding: 5px;
@@ -949,13 +949,13 @@ article footer .addthis iframe {
   font-size: 100%;
 }
 .entry .gist .gist-file .gist-meta a {
-  color: #1b7aca;
+  color: #1b1b1b;
 }
 .entry .gist .gist-file .gist-meta a:visited {
-  color: #1b7aca;
+  color: #1b1b1b;
 }
 figure.highlight {
-  background: #f1f1f1;
+  background: #774;
   border: 1px solid #f1f1f1;
   margin-top: 15px;
   padding: 7px 15px;
