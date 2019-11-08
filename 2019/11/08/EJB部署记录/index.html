@@ -1,18 +1,128 @@
-include _views/post
-include _views/menu
-extends _views/main
+<!DOCTYPE html>
+<html>
 
-block main
-  +post(page, 'post')
-  if config.disqus_shortname && page.comments
-    div.comments
-      div#disqus_thread
-        noscript.
-          Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a>
+<head>
+  <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+  <title>EJB部署记录 | etle&#39;s blog</title>
+  <meta name="description" content="just a blog" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="MobileOptimized" content="320" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-block head
-  title
-    = page.title + ' - ' + config.title
+  <link rel="stylesheet" type="text/css" href="/etld/css/screen.css" />
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic|Open+Sans:700,400" />
 
-block menu
-  +menu('post')
+  <meta name="generator" content="etle's blog">
+
+  
+  
+  
+
+  
+</head>
+
+
+<body class="post-template">
+
+  <header class="site-head"  style="background-image: url(//blog.ghost.org/content/images/2013/Nov/cover.png)" >
+    <div class="vertical">
+        <div class="site-head-content inner">
+             <a class="blog-logo" href="/etld/"><img src="//blog.ghost.org/content/images/2013/Nov/bloglogo_1-1.png" alt="Blog Logo"/></a> 
+            <h1 class="blog-title">etle's blog</h1>
+            <h2 class="blog-description">just a blog</h2>
+        </div>
+    </div>
+</header>
+  
+
+<main class="content" role="main">
+  <article class="post">
+    <span class="post-meta">
+      <time datetime="2019-11-08T13:16:46.757Z" itemprop="datePublished">
+          2019-11-08
+      </time>
+    
+</span>
+    <h1 class="post-title">EJB部署记录</h1>
+    <section class="post-content">
+      <hr>
+<p>环境使用的是Glassfish5+Myeclipse。其中Myeclipse的版本是2018.8.0。</p>
+<p>安装Glassfish的部分略过，安装说明安装即可。  </p>
+<hr>
+<ol>
+<li>首先创建项目。<br><img src="1.png" alt=""><br><img src="2.png" alt=""> <br>
+<br></li>
+<li>新建模块，只创建EJB模块和Web模块，然后点击Finish：<br><img src="3.png" alt=""><br><img src="4.png" alt=""><br>然后回到EAR项目创建界面，一路next并finish。<br>
+<br></li>
+<li>在生成的EJBNEWEJB模块中加入实验使用的Bean和接口。<br><img src="5.png" alt=""><br><img src="6.png" alt=""><br>
+<br></li>
+<li>在EJBNEWWeb的属性中加入模块(Properties-&gt;Deployment-&gt; Deployment Assembly)：<br><img src="7.png" alt=""><br><img src="8.png" alt=""><br><img src="9.png" alt=""><br>
+<br> </li>
+<li>Finish后回到属性，Apply。然后将index.jsp修改为如下：<br><img src="10.png" alt=""><br>
+<br></li>
+<li>将项目加入Glassfish服务器的运行列表并运行index.jsp。可以看到页面成功加载，部署成功。<br><img src="11.png" alt=""><br>
+<br></li>
+</ol>
+
+    </section>
+    <footer class="post-footer">
+      <section class="author">
+    <h4>etld</h4>
+    <p>A designer, developer and entrepreneur. Spends his time travelling the world with a bag of kites. Likes journalism and publishing platforms.</p>
+</section>
+      <section class="share">
+    <h4>Share this post</h4>
+    <a class="icon-twitter" href="http://twitter.com/share?url=http://etlighthead.github.io/etld/2019/11/08/EJB部署记录/"
+       onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+        <span class="hidden">Twitter</span>
+    </a>
+    <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://etlighthead.github.io/etld/2019/11/08/EJB部署记录/"
+       onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+        <span class="hidden">Facebook</span>
+    </a>
+    <a class="icon-google-plus" href="https://plus.google.com/share?url=http://etlighthead.github.io/etld/2019/11/08/EJB部署记录/"
+       onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+        <span class="hidden">Google+</span>
+    </a>
+</section>
+    </footer>
+  </article>
+  <nav class="pagination" role="pagination">
+    
+    <span class="page-number">•</span>
+    
+    <a class="older-posts" href="/etld/2019/11/06/Hello%20world/">
+        Hello World →
+    </a>
+    
+</nav>
+  <div id="comment" class="comments-area">
+    <h1 class="title"><a href="#disqus_comments" name="disqus_comments">Comments</a></h1>
+
+    
+</div>
+</main>
+
+
+  
+<footer class="site-footer">
+  
+  <div class="inner">
+     <section class="copyright">All content copyright <a href="/etld/">etle's blog</a> &copy; 2014 &bull; All rights reserved.</section>
+     <section class="poweredby">Proudly published with <a class="icon-ghost" href="http://zespia.tw/hexo/" target="_blank" rel="noopener">Hexo</a></section>
+  </div>
+</footer>
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+<script type="text/javascript" src="/etld/js/jquery.fitvids.js"></script>
+<script type="text/javascript" src="/etld/js/index.js"></script>
+
+
+
+
+
+
+</body>
+</html>

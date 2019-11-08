@@ -1,21 +1,128 @@
-include _views/post
-include _views/menu
-extends _views/main
+<!DOCTYPE html>
+<html>
 
-block main
-  -var time
-  -site.posts.sort('date', 'desc').each(function(post){
-    -var year = post.date.year()
-    -if(time != year){
-      -if(time){
-        h2.archive-title
-          = year
-      -}
-      -time = year
-    -}
-    +post(post, 'archive')
-  -})
+<head>
+  <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+  <title>Archives: 2019/11 | etle&#39;s blog</title>
+  <meta name="description" content="just a blog" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="MobileOptimized" content="320" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-block head
-  title
-    = 'Archives - ' + config.title
+  <link rel="stylesheet" type="text/css" href="/etld/css/screen.css" />
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic|Open+Sans:700,400" />
+
+  <meta name="generator" content="etle's blog">
+
+  
+  
+  
+
+  
+</head>
+
+
+<body class="home-template">
+
+  <header class="site-head"  style="background-image: url(//blog.ghost.org/content/images/2013/Nov/cover.png)" >
+    <div class="vertical">
+        <div class="site-head-content inner">
+             <a class="blog-logo" href="/etld/"><img src="//blog.ghost.org/content/images/2013/Nov/bloglogo_1-1.png" alt="Blog Logo"/></a> 
+            <h1 class="blog-title">etle's blog</h1>
+            <h2 class="blog-description">just a blog</h2>
+        </div>
+    </div>
+</header>
+  
+<main class="content" role="main">
+  
+  <article class="post">
+    <header class="post-header">
+      <span class="post-meta">
+      <time datetime="2019-11-08T13:16:46.757Z" itemprop="datePublished">
+          2019-11-08
+      </time>
+    
+</span>
+      <h2 class="post-title"><a href="/etld/2019/11/08/EJB部署记录/">EJB部署记录</a></h2>
+    </header>
+    <section class="post-excerpt">
+      <p>
+      
+        
+环境使用的是Glassfish5+Myeclipse。其中Myeclipse的版本是2018.8.0。
+安装Glassfish的部分略过，安装说明安装即可。  
+
+
+首先创建项目。 
+
+新建模块，只创建EJB模块和Web模块，然后点击Finish：然后回到EAR项目创建界面，一路next并finish。
+
+在生成的EJBNEWEJB模块中加入实验使用的Bean和接口。
+
+在EJBNEWWeb的属性中加入模块(Properties-&g
+      
+      </p>
+      
+      <p>
+          <a href="/etld/2019/11/08/EJB部署记录/" class="excerpt-link">Read More...</a>
+      </p>
+      
+    </section>
+  </article>
+  
+  <article class="post">
+    <header class="post-header">
+      <span class="post-meta">
+      <time datetime="2019-11-06T11:02:36.446Z" itemprop="datePublished">
+          2019-11-06
+      </time>
+    
+</span>
+      <h2 class="post-title"><a href="/etld/2019/11/06/Hello world/">Hello World</a></h2>
+    </header>
+    <section class="post-excerpt">
+      <p>
+      
+        第一篇文章，没什么其他想写的内容。
+
+      
+      </p>
+      
+      <p>
+          <a href="/etld/2019/11/06/Hello world/" class="excerpt-link">Read More...</a>
+      </p>
+      
+    </section>
+  </article>
+  
+  <nav class="pagination" role="pagination">
+    
+    <span class="page-number">Page 1 of 1</span>
+    
+  </nav>
+</main>
+
+
+  
+<footer class="site-footer">
+  
+  <div class="inner">
+     <section class="copyright">All content copyright <a href="/etld/">etle's blog</a> &copy; 2014 &bull; All rights reserved.</section>
+     <section class="poweredby">Proudly published with <a class="icon-ghost" href="http://zespia.tw/hexo/" target="_blank" rel="noopener">Hexo</a></section>
+  </div>
+</footer>
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+<script type="text/javascript" src="/etld/js/jquery.fitvids.js"></script>
+<script type="text/javascript" src="/etld/js/index.js"></script>
+
+
+
+
+
+
+</body>
+</html>
